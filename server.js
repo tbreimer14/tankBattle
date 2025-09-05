@@ -49,10 +49,6 @@ function everySecond(){
   // Calculate fps
   fps = frame;
   frame = 0;
-
-  console.log("#Of Bullets: " + game.bullets.length);
-
-  console.log("FPS: " + fps);
 }
 
 function isUndefined(variable){
@@ -112,7 +108,7 @@ function Game(){
     }
 
     this.updateBullets();
-    //this.updatePowerUps();
+    this.updatePowerUps();
 
     frame += 1;
   }
